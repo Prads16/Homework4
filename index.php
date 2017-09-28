@@ -18,6 +18,7 @@ $obj->strlen();
 $obj->strrev();
 $obj->strpos();
 $obj->str_shuffle();
+$obj->substr();
 
 class main 
 {
@@ -153,6 +154,14 @@ echo '<h1> Random shuffling of the string </h1>';
 $s3="Pradnya";
 $shuffled=str_shuffle($s3);
 echo $shuffled;
+echo '<hr>';
+}
+
+public function substr()
+{
+echo '<h1> Return a part of the string </h1>';
+$stresult1=substr("Pradnya", -3);
+echo $stresult1;
 echo '<hr>';
 }
 public function __destruct()
