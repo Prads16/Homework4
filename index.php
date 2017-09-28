@@ -16,6 +16,7 @@ $obj->array_count_values();
 $obj->array_change_key_case();
 $obj->strlen();
 $obj->strrev();
+$obj->strpos();
 
 
 class main 
@@ -134,6 +135,15 @@ public function strrev()
 {
 echo '<h1> Reversal of string </h1>';
 echo strrev("Pradnya");
+echo '<hr>';
+}
+
+public function strpos()
+{
+echo 'First occurrence in a sub string';
+$s2="William Keith teaches Web system Development";
+$stresult=strpos($s2, "Keith");
+echo 'Keith is found at element:'.$stresult;
 echo '<hr>';
 }
 public function __destruct()
