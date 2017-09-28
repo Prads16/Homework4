@@ -17,7 +17,7 @@ $obj->array_change_key_case();
 $obj->strlen();
 $obj->strrev();
 $obj->strpos();
-
+$obj->str_shuffle();
 
 class main 
 {
@@ -140,10 +140,19 @@ echo '<hr>';
 
 public function strpos()
 {
-echo 'First occurrence in a sub string';
+echo '<h1> First occurrence in a sub string </h1>';
 $s2="William Keith teaches Web system Development";
 $stresult=strpos($s2, "Keith");
 echo 'Keith is found at element:'.$stresult;
+echo '<hr>';
+}
+
+public function str_shuffle()
+{
+echo '<h1> Random shuffling of the string </h1>';
+$s3="Pradnya";
+$shuffled=str_shuffle($s3);
+echo $shuffled;
 echo '<hr>';
 }
 public function __destruct()
