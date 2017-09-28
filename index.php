@@ -21,6 +21,7 @@ $obj->str_shuffle();
 $obj->substr();
 $obj->strtolower();
 $obj->strtoupper();
+$obj->str_split();
 
 class main 
 {
@@ -180,6 +181,17 @@ public function strtoupper()
 echo '<h1> Upper case of the string </h1>';
 $s5="web system development";
 echo strtoupper($s5);
+echo '<hr>';
+}
+
+public function str_split()
+{
+echo '<h1> Split String </h1>';
+$s6="Web Systems";
+$a14=str_split($s6);
+$a15=str_split($s6,2);
+print_r($a14);
+print_r($a15);
 echo '<hr>';
 }
 public function __destruct()
