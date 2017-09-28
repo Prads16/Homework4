@@ -20,6 +20,7 @@ $obj->strpos();
 $obj->str_shuffle();
 $obj->substr();
 $obj->strtolower();
+$obj->strtoupper();
 
 class main 
 {
@@ -171,6 +172,14 @@ public function strtolower()
 echo '<h1> Lower case of the string </h1>';
 $s4="WEB SYSTEM DEVELOPMENT";
 echo strtolower($s4);
+echo '<hr>';
+}
+
+public function strtoupper()
+{
+echo '<h1> Upper case of the string </h1>';
+$s5="web system development";
+echo strtoupper($s5);
 echo '<hr>';
 }
 public function __destruct()
