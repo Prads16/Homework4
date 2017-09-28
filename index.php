@@ -19,6 +19,7 @@ $obj->strrev();
 $obj->strpos();
 $obj->str_shuffle();
 $obj->substr();
+$obj->strtolower();
 
 class main 
 {
@@ -162,6 +163,14 @@ public function substr()
 echo '<h1> Return a part of the string </h1>';
 $stresult1=substr("Pradnya", -3);
 echo $stresult1;
+echo '<hr>';
+}
+
+public function strtolower()
+{
+echo '<h1> Lower case of the string </h1>';
+$s4="WEB SYSTEM DEVELOPMENT";
+echo strtolower($s4);
 echo '<hr>';
 }
 public function __destruct()
