@@ -22,6 +22,7 @@ $obj->substr();
 $obj->strtolower();
 $obj->strtoupper();
 $obj->str_split();
+$obj->implode();
 
 class main 
 {
@@ -192,6 +193,15 @@ $a14=str_split($s6);
 $a15=str_split($s6,2);
 print_r($a14);
 print_r($a15);
+echo '<hr>';
+}
+
+public function implode()
+{
+echo '<h1> Imploding the array of elements </h1>';
+$s7=array('Steve', 'George', 'John', 'Bob');
+$stresult2=implode('::',$s7);
+echo $stresult2;
 echo '<hr>';
 }
 public function __destruct()
