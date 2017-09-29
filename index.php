@@ -23,6 +23,7 @@ $obj->strtolower();
 $obj->strtoupper();
 $obj->str_split();
 $obj->implode();
+$obj->explode();
 
 class main 
 {
@@ -202,6 +203,15 @@ echo '<h1> Imploding the array of elements </h1>';
 $s7=array('Steve', 'George', 'John', 'Bob');
 $stresult2=implode('::',$s7);
 echo $stresult2;
+echo '<hr>';
+}
+
+public function explode()
+{
+echo '<h1> Exploding elements into an array </h1>';
+$s8='GitHub is a version control repository';
+$stresult3=explode(' ',$s8);
+echo $stresult3[3];
 echo '<hr>';
 }
 public function __destruct()
