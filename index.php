@@ -1,8 +1,9 @@
 <?php
 
+
 $obj = new main();
 
-$text = "Strings & Arrays";
+$text = "<h2>Strings & Arrays</h2>";
 $obj->printthis($text);
 $obj->array_reverse();        
 $obj->array_replace();
@@ -30,7 +31,7 @@ class main
 public function __construct() 
 {
 
-echo 'hello i\'m an Object </br>';
+echo 'Pradnya Ambre </br>';
 }
 
 public function printthis($text) 
@@ -216,7 +217,7 @@ echo '<hr>';
 }
 public function __destruct()
 {
-echo '</br> I\'m Done';
+echo '</br> String and Array functions used.';
 }
 }
 ?>
